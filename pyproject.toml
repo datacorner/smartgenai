@@ -1,0 +1,41 @@
+[project]
+name = "smartgenai"
+version = "0.1.4.0"
+authors = [
+  { name="datacorner community", email="admin@datacorner.fr" },
+]
+description = "Lightweight RAG Framework: Simple and Scalable Framework with Efficient Embeddings."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {file = "LICENSE"}
+classifiers = [
+  # How mature is this project? Common values are
+  #   3 - Alpha
+  #   4 - Beta
+  #   5 - Production/Stable
+    "Development Status :: 3 - Alpha",
+    "Operating System :: OS Independent",
+    "Environment :: Console",
+    "Programming Language :: Python :: 3.10",
+]
+dependencies = [
+"pandas==2.2.1",
+"PyMuPDF==1.24.0",
+"langchain==0.1.13",
+"sentence-transformers==2.6.0",
+"faiss-cpu==1.8.0",
+"numpyencoder==0.3.0",
+"langchain-experimental==0.0.55",
+"chromadb-client==0.4.25.dev0",
+"Jinja2==3.1.3",
+"beautifulsoup4==4.12.3",
+"boto3==1.34.119",
+"botocore",
+"flashrank"
+]
+
+[build-system]
+# These are the assumed default build requirements from pip:
+# https://pip.pypa.io/en/stable/reference/pip/#pep-517-and-518-support
+requires = ["setuptools>=43.0.0", "wheel"]
+build-backend = "setuptools.build_meta"

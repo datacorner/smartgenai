@@ -1,0 +1,14 @@
+.venv_smartgenai/*
+__pycache__/*
+*.pyc
+__pycache__/*.pyc
+*.log
+vstore/*
+working/*
+working/cfg/*
+working/chroma.sqlite3
+*/smartgenai.egg-info/*
+.vscode/settings.json
+*.pyc.*
+working/cfg.zip
+
