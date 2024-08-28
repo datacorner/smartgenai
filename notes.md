@@ -5,8 +5,10 @@ pip install -r requirements.txt
 ## Build setup
 ( the python package build must be installed beforehand)
 1) build/Modify the *.toml file
-2) run $ py -m build
-3) pip install C:\Git\bp-genai-fmk\dist\ragfmk-x.x.x.x-py3-none-any.whl
+2) build 
+   $ py -m build
+3) deploy / pypi 
+   $ twine upload ./dist/smartgenai-0.1.0.0-py3-none-any.whl
 
 ## Run Chroma DB
 $ chroma run --host localhost --port 8000 --path C:\\chromadb
