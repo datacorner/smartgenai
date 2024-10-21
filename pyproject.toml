@@ -1,6 +1,6 @@
 [project]
 name = "smartgenai"
-version = "0.1.0.0"
+version = "0.1.0.2"
 authors = [
   { name="datacorner community", email="admin@datacorner.fr" },
 ]
@@ -23,7 +23,7 @@ dependencies = [
 "PyMuPDF==1.24.0",
 "langchain==0.1.13",
 "sentence-transformers==2.6.0",
-"faiss-cpu==1.8.0",
+"faiss-cpu==1.9.0",
 "numpyencoder==0.3.0",
 "langchain-experimental==0.0.55",
 "chromadb-client==0.4.25.dev0",

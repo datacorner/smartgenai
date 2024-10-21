@@ -4,7 +4,7 @@ __license__ = "MIT"
 
 import pandas as pd
 import numpy as np
-import faiss # pip install faiss-cpu (https://pypi.org/project/faiss-cpu/)
+import faiss as FAISS # pip install faiss-cpu==1.7.4 (https://pypi.org/project/faiss-cpu/)
 import pickle
 import os
 import smartgenai.utils.CONST as C
@@ -49,7 +49,7 @@ class faiss(vstoreBaseObject):
                 self.logInfo("Save FAISS index in file {}".format(indexfile))
                 with open(datafile, "wb") as f:
                     pickle.dump(self.__dfContent, f)
-                faiss.write_index(self.__index, indexfile)
+                FAISS.write_index(self.__index, indexfile)
                 self.logInfo("FAISS index and data saved successfully.")
         except Exception as e:
             self.logError("Impossible to save FAISS index and data saved, error= {}".format(e))
@@ -70,11 +70,10 @@ class faiss(vstoreBaseObject):
                 self.logInfo("Load FAISS index in file {}".format(indexfile))
                 with open(datafile, "rb") as f:
                     self.__dfContent = pickle.load(f)
-                self.__index = faiss.read_index(indexfile)
+                self.__index = FAISS.read_index(indexfile)
                 self.logInfo("FAISS index and data loaded successfully.")
         except Exception as e:
             self.logError("Impossible to load FAISS index and data, error= {}".format(e))
-            raise
         
     @property
     def size(self) -> int:
@@ -116,7 +115,7 @@ class faiss(vstoreBaseObject):
             Build a Flat L2 index
         """
         vout = self.__prepareEmbeddings(embeddings)
-        self.__index = faiss.IndexFlatL2(vout.shape[1])
+        self.__index = FAISS.IndexFlatL2(vout.shape[1])
         self.__index.add(vout)
 
     def __prepareEmbeddings(self, vects):
@@ -128,7 +127,7 @@ class faiss(vstoreBaseObject):
         """
         vout =  np.asarray(vects)
         vout = vout.astype(np.float32) # Only support ndarray in 32 bits !
-        faiss.normalize_L2(vout)
+        FAISS.normalize_L2(vout) 
         return vout
 
     def getNearest(self, vPrompt, k) -> nearest:
