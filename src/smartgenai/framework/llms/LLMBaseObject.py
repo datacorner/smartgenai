@@ -1,5 +1,5 @@
 __author__ = "datacorner community"
-__email__ = "admin@datacorner.fr"
+__email__ = "benoit@datacorner.fr"
 __license__ = "MIT"
 
 
@@ -24,7 +24,7 @@ class LLMBaseObject(ILLM, objectBase):
         self.__inputParameters = tr
         
     def setJSONParameters(self, jsonContent):
-        self.__inputParameters = json.loads(jsonContent)
+        self.__inputParameters = jsonContent # json.loads(jsonContent)
         
     def getParameterValue(self, name, default=None):
         try:
@@ -38,7 +38,7 @@ class LLMBaseObject(ILLM, objectBase):
     
     @property        
     def jsonOutputs(self):
-        return json.dumps(self.__outputs)
+        return self.__outputs # json.dumps(self.__outputs)
     
     def setCustomOutputs(self, model_response):
         pass

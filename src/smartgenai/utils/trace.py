@@ -1,5 +1,5 @@
 __author__ = "datacorner community"
-__email__ = "admin@datacorner.fr"
+__email__ = "benoit@datacorner.fr"
 __license__ = "MIT"
 
 import time
@@ -66,4 +66,4 @@ class trace:
         self.stopTime = datetime.now() if self.stopTime == None else self.stopTime
         fullJson["stop"] = str(self.stopTime)
         fullJson["duration"] = str(self.stopTime - self.startTime)
-        return json.dumps(fullJson)
+        return fullJson # json.dumps(fullJson)

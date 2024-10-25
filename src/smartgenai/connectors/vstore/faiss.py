@@ -1,5 +1,5 @@
 __author__ = "datacorner community"
-__email__ = "admin@datacorner.fr"
+__email__ = "benoit@datacorner.fr"
 __license__ = "MIT"
 
 import pandas as pd

@@ -15,7 +15,7 @@ class llmPrompts_test(unittest.TestCase):
         
     def test_01_Ollama_oneshot(self):
         myRag = ragWrapper()
-        with open("working\cfg\ollama_cfg.json", "r") as fichier:
+        with open("working\\cfg\\ollama_cfg.json", "r") as fichier:
             jsonCfg = fichier.read()
         response, outs = myRag.prompt(T.SIMPLEPROMPT, jsonCfg)
         self.assertTrue(len(response) > 0)

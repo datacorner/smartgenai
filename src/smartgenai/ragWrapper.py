@@ -1,12 +1,12 @@
 __author__ = "datacorner community"
-__email__ = "admin@datacorner.fr"
+__email__ = "benoit@datacorner.fr"
 __license__ = "MIT"
 
-from src.smartgenai.connectors.documents.simplePdf import simplePdf
-from src.smartgenai.connectors.documents.txt import txt
+from smartgenai.connectors.documents.simplePdf import simplePdf
+from smartgenai.connectors.documents.txt import txt
 from smartgenai.framework.sets.prompt import prompt
 from smartgenai.utils.trace import trace
-from src.smartgenai.framework.embeddings.embeddingsBaseObject import embeddingsBaseObject
+from smartgenai.framework.embeddings.embeddingsBaseObject import embeddingsBaseObject
 from smartgenai.framework.sets.chunks import chunks
 from smartgenai.framework.sets.nearest import nearest
 from smartgenai.framework.llms.LLMFactory import LLMFactory
@@ -139,7 +139,7 @@ class ragWrapper():
             self.trace.addlog(C.LOGERROR, "Error while building the LLM prompt {}".format(str(e)))
             return ""
 
-    def prompt(self, prompt, jsonLLMConfig):
+    def prompt(self, jsonLLMConfig, prompt=""):
         """ send a prompt to the LLM
         Args:
             question (str): prompt

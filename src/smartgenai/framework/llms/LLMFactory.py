@@ -1,5 +1,5 @@
 __author__ = "datacorner community"
-__email__ = "admin@datacorner.fr"
+__email__ = "benoit@datacorner.fr"
 __license__ = "MIT"
 
 import importlib
@@ -21,12 +21,11 @@ class LLMFactory():
                 Object (dpInstantiableObj): Object
         """
         try:
-
-            # Read the config file
-            jparams = json.loads(jsonConfig)
+            if not isinstance(jsonConfig, dict):
+                jsonConfig = json.loads(jsonConfig) # convert the config file from str (json) to dict
             
             # Get the class to instantiate
-            fullClassPath = jparams["pclass"]
+            fullClassPath = jsonConfig["pclass"]
             if (fullClassPath == C.NULLSTRING):
                 raise Exception("The {} parameter is mandatory and cannot be empty".format(fullClassPath))
             else:

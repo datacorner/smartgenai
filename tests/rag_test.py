@@ -12,7 +12,7 @@ from src.smartgenai.framework.sets.nearest import nearest
 
 import tests.const_test as T
 
-class wrapper_test(unittest.TestCase):
+class rag_test(unittest.TestCase):
     def __init__(self, methodName: str = "runTest") -> None:
         super().__init__(methodName)
         self.myRag = ragWrapper()
