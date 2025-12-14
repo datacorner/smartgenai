@@ -5,7 +5,7 @@ __license__ = "MIT"
 import importlib
 import importlib.resources
 import smartgenai.utils.CONST as C
-from src.smartgenai.framework.documents.documentBaseObject import documentBaseObject
+from smartgenai.framework.documents.documentBaseObject import documentBaseObject
 import json
 
 class documentFactory():

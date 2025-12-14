@@ -5,7 +5,7 @@ __license__ = "MIT"
 import importlib
 import importlib.resources
 import smartgenai.utils.CONST as C
-from src.smartgenai.framework.embeddings.embeddingsBaseObject import embeddingsBaseObject
+from smartgenai.framework.embeddings.embeddingsBaseObject import embeddingsBaseObject
 import json
 
 class embeddingsFactory():

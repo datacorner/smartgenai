@@ -2,7 +2,7 @@ __author__ = "datacorner community"
 __email__ = "benoit@datacorner.fr"
 __license__ = "MIT"
 
-from src.smartgenai.framework.documents.documentBaseObject import documentBaseObject
+from smartgenai.framework.documents.documentBaseObject import documentBaseObject
 from langchain_community.document_loaders import WebBaseLoader
 import smartgenai.utils.CONST as C
 

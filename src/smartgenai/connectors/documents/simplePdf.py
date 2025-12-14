@@ -3,7 +3,7 @@ __email__ = "benoit@datacorner.fr"
 __license__ = "MIT"
 
 import fitz # pip install PyMuPDF
-from src.smartgenai.framework.documents.documentBaseObject import documentBaseObject
+from smartgenai.framework.documents.documentBaseObject import documentBaseObject
 
 class simplePdf(documentBaseObject):
     def __init__(self):

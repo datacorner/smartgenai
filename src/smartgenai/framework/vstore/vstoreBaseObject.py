@@ -4,7 +4,7 @@ __license__ = "MIT"
 
 
 from smartgenai.framework.objectBase import objectBase
-from src.smartgenai.interfaces.IVStore import IVStore
+from smartgenai.interfaces.IVStore import IVStore
 
 import json
 

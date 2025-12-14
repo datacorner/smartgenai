@@ -5,7 +5,7 @@ __license__ = "MIT"
 import importlib
 import importlib.resources
 import smartgenai.utils.CONST as C
-from src.smartgenai.framework.vstore.vstoreBaseObject import vstoreBaseObject
+from smartgenai.framework.vstore.vstoreBaseObject import vstoreBaseObject
 import json
 
 class vstoreFactory():

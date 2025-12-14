@@ -8,7 +8,7 @@ import smartgenai.utils.CONST as C
 import pandas as pd
 from smartgenai.framework.sets.nearest import nearest
 import hashlib
-from src.smartgenai.framework.vstore.vstoreBaseObject import vstoreBaseObject
+from smartgenai.framework.vstore.vstoreBaseObject import vstoreBaseObject
 
 """ 
     Leverage Chroma DB

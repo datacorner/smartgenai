@@ -6,7 +6,7 @@ import requests
 import json
 
 import smartgenai.utils.CONST as C
-from src.smartgenai.framework.embeddings.embeddingsBaseObject import embeddingsBaseObject
+from smartgenai.framework.embeddings.embeddingsBaseObject import embeddingsBaseObject
 from smartgenai.framework.embeddings.embedding import embedding
 
 """

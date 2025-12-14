@@ -4,7 +4,7 @@ __license__ = "MIT"
 
 from sentence_transformers import SentenceTransformer
 import smartgenai.utils.CONST as C
-from src.smartgenai.framework.embeddings.embeddingsBaseObject import embeddingsBaseObject
+from smartgenai.framework.embeddings.embeddingsBaseObject import embeddingsBaseObject
 from smartgenai.framework.embeddings.embedding import embedding
 
 """

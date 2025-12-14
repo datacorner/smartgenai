@@ -9,7 +9,7 @@ import pickle
 import os
 import smartgenai.utils.CONST as C
 from smartgenai.framework.sets.nearest import nearest
-from src.smartgenai.framework.vstore.vstoreBaseObject import vstoreBaseObject
+from smartgenai.framework.vstore.vstoreBaseObject import vstoreBaseObject
 
 """ 
     Leverage Meta FAISS

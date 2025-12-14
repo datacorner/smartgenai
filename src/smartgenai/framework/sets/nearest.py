@@ -74,7 +74,7 @@ class nearest(INearest, objectBase):
             raise
 
     @property
-    def size(self) -> items: 
+    def size(self) -> int: 
         return len(self.items)
     
     def __createEnveloppe(self) -> str:

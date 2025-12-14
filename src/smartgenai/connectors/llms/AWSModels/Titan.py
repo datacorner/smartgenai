@@ -2,7 +2,7 @@ __author__ = "datacorner community"
 __email__ = "benoit@datacorner.fr"
 __license__ = "MIT"
 
-from src.smartgenai.connectors.llms.AWSBaseModel import AWSBaseModel
+from smartgenai.connectors.llms.AWSBaseModel import AWSBaseModel
 
 # https://docs.aws.amazon.com/code-library/latest/ug/python_3_bedrock-runtime_code_examples.html
 
